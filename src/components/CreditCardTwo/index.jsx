@@ -14,7 +14,7 @@ const CreditCardTwo = () => {
 
   const changeFocus = (e) => {
     const currentInput = e.target
-        //Porovnávám, jestli refInputu se rovná aktivního inputu. Zjišťuji jeho délku
+        //Porovnávám, jestli refInputu se rovná aktivnímu inputu. Zjišťuji délku inputu.
     if (currentInput === inputsRef.current.firstInput && currentInput.value.length === 4) {
       inputsRef.current.secondInput.focus()
     } else if (currentInput === inputsRef.current.secondInput && currentInput.value.length === 4) {

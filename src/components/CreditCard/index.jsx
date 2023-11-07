@@ -12,6 +12,7 @@ const CreditCard = () => {
 
   const changeFocus = (e) => {
     const currentInput = e.target
+    c(firstInputRef.current)
 
     if (currentInput === firstInputRef.current && currentInput.value.length === 4) {
       secondInputRef.current.focus()
