@@ -24,7 +24,7 @@ const CreditCard = () => {
 
   useEffect(() => {
     firstInputRef.current.focus()
-  }, [])
+  }, [firstInputRef])
 
   return (
     <form id="credit-card-inputs">
