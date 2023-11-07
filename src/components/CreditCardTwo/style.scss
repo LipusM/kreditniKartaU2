@@ -1,0 +1,21 @@
+#credit-card-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        width: max-content;
+
+        input{
+            margin: 0px 5px;
+            border: solid 1px black;
+            border-radius: 5px;
+
+            &:focus{
+                outline: solid green 2px;
+                border: none;
+            }
+        }
+    }
+
+}
