@@ -2,7 +2,7 @@ const c = console.log.bind(document)
 
 import "./style.scss"
 
-import { useState, useRef, useEffect } from "react"
+import { useRef, useEffect } from "react"
 
 
 const CreditCardTwo = () => {
