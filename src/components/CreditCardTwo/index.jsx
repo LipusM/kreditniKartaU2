@@ -4,6 +4,7 @@ import "./style.scss"
 
 import { useState, useRef, useEffect } from "react"
 
+
 const CreditCardTwo = () => {
   const inputsRef = useRef({
     firstInput: null,
@@ -12,9 +13,9 @@ const CreditCardTwo = () => {
     fourthInput: null,
   })
 
+  //Fce zajišťující focus na inputy dle podmínek
   const changeFocus = (e) => {
     const currentInput = e.target
-    /* const onlyNumbers = currentInput.value.replace(/\D/g, "") */
 
         //Porovnávám, jestli refInputu se rovná aktivnímu inputu. Zjišťuji délku inputu.
     if (currentInput === inputsRef.current.firstInput && currentInput.value.length === 4) {
@@ -30,13 +31,20 @@ const CreditCardTwo = () => {
     inputsRef.current.firstInput.focus()
   }, [inputsRef.current.firstInput])
 
+  //Funkce umožňující psát pouze čísla (zdroj: https://awik.io/allow-numbers-input-field-javascript/)
+  const numbersOnly = (e) => {
+    if(isNaN(e.key) && e.key !== 'Backspace') {
+      e.preventDefault();
+    }
+  }
+
   return (
     <form id="credit-card-inputs">
       <div>
-        <input ref={el => inputsRef.current.firstInput = el} type="text" maxLength="4" onInput={changeFocus}/>
-        <input ref={el => inputsRef.current.secondInput = el} type="text" maxLength="4" onInput={changeFocus}/>
-        <input ref={el => inputsRef.current.thirdInput = el} type="text" maxLength="4" onInput={changeFocus}/>
-        <input ref={el => inputsRef.current.fourthInput = el} type="text" maxLength="4" onInput={changeFocus}/>
+        <input ref={el => inputsRef.current.firstInput = el} type="text" maxLength="4" onChange={e => changeFocus(e)} onKeyDown={numbersOnly}/>
+        <input ref={el => inputsRef.current.secondInput = el} type="text" maxLength="4" onChange={e => changeFocus(e)} onKeyDown={numbersOnly}/>
+        <input ref={el => inputsRef.current.thirdInput = el} type="text" maxLength="4" onChange={e => changeFocus(e)} onKeyDown={numbersOnly}/>
+        <input ref={el => inputsRef.current.fourthInput = el} type="text" maxLength="4" onChange={e => changeFocus(e)} onKeyDown={numbersOnly}/>
       </div>
     </form>
   )
