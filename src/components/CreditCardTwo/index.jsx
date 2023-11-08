@@ -33,7 +33,7 @@ const CreditCardTwo = () => {
 
   //Funkce umožňující psát pouze čísla (zdroj: https://awik.io/allow-numbers-input-field-javascript/)
   const numbersOnly = (e) => {
-    if(isNaN(e.key) && e.key !== 'Backspace') {
+    if(isNaN(e.key) && e.key !== 'Backspace' || e.key === " ") {
       e.preventDefault();
     }
   }
