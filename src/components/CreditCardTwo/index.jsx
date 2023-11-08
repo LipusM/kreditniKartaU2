@@ -41,10 +41,10 @@ const CreditCardTwo = () => {
   return (
     <form id="credit-card-inputs">
       <div>
-        <input ref={el => inputsRef.current.firstInput = el} type="text" maxLength="4" onChange={e => changeFocus(e)} onKeyDown={numbersOnly}/>
-        <input ref={el => inputsRef.current.secondInput = el} type="text" maxLength="4" onChange={e => changeFocus(e)} onKeyDown={numbersOnly}/>
-        <input ref={el => inputsRef.current.thirdInput = el} type="text" maxLength="4" onChange={e => changeFocus(e)} onKeyDown={numbersOnly}/>
-        <input ref={el => inputsRef.current.fourthInput = el} type="text" maxLength="4" onChange={e => changeFocus(e)} onKeyDown={numbersOnly}/>
+        <input ref={el => inputsRef.current.firstInput = el} type="text" maxLength="4" onChange={changeFocus} onKeyDown={numbersOnly}/>
+        <input ref={el => inputsRef.current.secondInput = el} type="text" maxLength="4" onChange={changeFocus} onKeyDown={numbersOnly}/>
+        <input ref={el => inputsRef.current.thirdInput = el} type="text" maxLength="4" onChange={changeFocus} onKeyDown={numbersOnly}/>
+        <input ref={el => inputsRef.current.fourthInput = el} type="text" maxLength="4" onChange={changeFocus} onKeyDown={numbersOnly}/>
       </div>
     </form>
   )
