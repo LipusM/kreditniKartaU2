@@ -1,22 +1,22 @@
 #credit-card-inputs {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 
-    div{
+
+    #credit-card-input {
         width: max-content;
+        margin: auto;
 
-        input{
-            margin: 0px 5px;
-            border: solid 1px black;
-            border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
 
-            &:focus{
-                outline: solid green 2px;
-                border: none;
-            }
+@media screen and (max-width: 428px) {
+
+    #credit-card-inputs {
+        #credit-card-input {
+            flex-direction: column;
         }
     }
-
 }

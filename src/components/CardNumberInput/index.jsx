@@ -1,4 +1,5 @@
-const c = console.log.bind(document)
+
+import "./style.scss"
 
 const CardNumberInput = ({refInput, chosen}) => {
 
