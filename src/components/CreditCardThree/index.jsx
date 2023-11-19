@@ -34,14 +34,14 @@ const CreditCardThree = () => {
 
 
   return (
-    <form id="credit-card-inputs">
+    <div id="credit-card-inputs">
       <div id="credit-card-input">
         <CardNumberInput refInput={el => inputsRef.current.firstInput = el} chosen={changeFocus}/>
         <CardNumberInput refInput={el => inputsRef.current.secondInput = el} chosen={changeFocus}/>
         <CardNumberInput refInput={el => inputsRef.current.thirdInput = el} chosen={changeFocus}/>
         <CardNumberInput refInput={el => inputsRef.current.fourthInput = el} chosen={changeFocus}/>
       </div>
-    </form>
+    </div>
   )
 }
 
