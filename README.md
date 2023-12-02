@@ -29,7 +29,7 @@ To start the project, just enter the following command in the terminal: **npm ru
 
 The address is then displayed in the terminal. To view it in the browser, you must hold ctrl/cmd while clicking on it.
 
-Create a component for convenient entry of credit card number. Have the component display four text boxes side by side, each for one quad of the numbers. Each time the user fills in four numbers in one field, the focus automatically moves to the next field.
+1. Create a component for convenient entry of credit card number. Have the component display four text boxes side by side, each for one quad of the numbers. Each time the user fills in four numbers in one field, the focus automatically moves to the next field.
    
 
 </details>
