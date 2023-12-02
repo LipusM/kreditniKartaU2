@@ -1,8 +1,36 @@
-# React + Vite
+## Nábytek XXXMuck (CZ)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<details>
+  <summary><b>Detail</b></summary>
 
-Currently, two official plugins are available:
+  **Jedná se projekt v průběhu kurzu React2. Slouží k zopakování zopakování doposud získaných znalostí.**
+  **Je postaven na Vite balíčku.**
+  
+  Pro spuštění projektu stačí v terminálu zadat příkaz:
+  **npm run dev**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Následně se v terminálu zobrazí adresa. Aby ji bylo možné v prohlížeči zobrazit, je nutné při kliku na na ní držet **ctrl/cmd**.
+
+  Originální zadání projektu:
+  1. Vytvořte komponentu pro pohodlné zadávání čísla kreditní karty. Komponenta nechť zobrazí vedle sebe čtyří textová pole, každé pro jednu čtveřici čísel. Vždy když uživatel vyplní čtyři čísla do jednoho pole, focus se automaticky přesune na další pole.
+
+
+</details>
+
+## Credit card (EN)
+
+<details>
+  <summary><b>Detail</b></summary>
+
+**This is a project during the React2 course. It is used to review the knowledge.**
+**For the features which are not part of the original assignment no procedure was created. Their creation was based on a voluntary basis. There was only a written assignment.**
+
+To start the project, just enter the following command in the terminal: **npm run dev**
+
+The address is then displayed in the terminal. To view it in the browser, you must hold ctrl/cmd while clicking on it.
+
+Create a component for convenient entry of credit card number. Have the component display four text boxes side by side, each for one quad of the numbers. Each time the user fills in four numbers in one field, the focus automatically moves to the next field.
+   
+
+</details>
+
