@@ -1,4 +1,4 @@
-## Nábytek XXXMuck (CZ)
+## Kreditní karta (CZ)
 
 <details>
   <summary><b>Detail</b></summary>
